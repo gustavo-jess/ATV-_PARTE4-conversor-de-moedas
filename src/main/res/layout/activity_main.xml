@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor a ser convertido"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtTaxaConversao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtValor"
+        android:layout_marginTop="16dp"
+        android:hint="Digite a taxa de conversão"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTaxaConversao"
+        android:layout_marginTop="16dp"
+        android:text="Converter" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConverter"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
